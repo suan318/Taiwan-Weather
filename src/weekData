@@ -1,0 +1,2112 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "F-D0047-091",
+    "fields": [
+      {
+        "id": "DatasetDescription",
+        "type": "String"
+      },
+      {
+        "id": "LocationsName",
+        "type": "String"
+      },
+      {
+        "id": "Dataid",
+        "type": "String"
+      },
+      {
+        "id": "LocationName",
+        "type": "String"
+      },
+      {
+        "id": "Geocode",
+        "type": "String"
+      },
+      {
+        "id": "Latitude",
+        "type": "String"
+      },
+      {
+        "id": "Longitude",
+        "type": "String"
+      },
+      {
+        "id": "ElementName",
+        "type": "String"
+      },
+      {
+        "id": "StartTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "EndTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "Temperature",
+        "type": "String"
+      },
+      {
+        "id": "DewPoint",
+        "type": "String"
+      },
+      {
+        "id": "MaxTemperature",
+        "type": "String"
+      },
+      {
+        "id": "MinTemperature",
+        "type": "String"
+      },
+      {
+        "id": "RelativeHumidity",
+        "type": "String"
+      },
+      {
+        "id": "MaxApparentTemperature",
+        "type": "String"
+      },
+      {
+        "id": "MinApparentTemperature",
+        "type": "String"
+      },
+      {
+        "id": "MaxComfortIndex",
+        "type": "String"
+      },
+      {
+        "id": "MaxComfortIndexDescription",
+        "type": "String"
+      },
+      {
+        "id": "MinComfortIndex",
+        "type": "String"
+      },
+      {
+        "id": "MinComfortIndexDescription",
+        "type": "String"
+      },
+      {
+        "id": "WindDirection",
+        "type": "String"
+      },
+      {
+        "id": "WindSpeed",
+        "type": "String"
+      },
+      {
+        "id": "BeaufortScale",
+        "type": "String"
+      },
+      {
+        "id": "ProbabilityOfPrecipitation",
+        "type": "String"
+      },
+      {
+        "id": "UVIndex",
+        "type": "String"
+      },
+      {
+        "id": "UVExposureLevel",
+        "type": "String"
+      },
+      {
+        "id": "Weather",
+        "type": "String"
+      },
+      {
+        "id": "WeatherCode",
+        "type": "String"
+      },
+      {
+        "id": "WeatherDescription",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "Locations": [
+      {
+        "DatasetDescription": "臺灣各縣市鄉鎮未來1週逐12小時天氣預報",
+        "LocationsName": "台灣",
+        "Dataid": "D0047-091",
+        "Location": [
+          {
+            "LocationName": "臺南市",
+            "Geocode": "67000000",
+            "Latitude": "22.996394",
+            "Longitude": "120.160419",
+            "WeatherElement": [
+              {
+                "ElementName": "平均溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "19"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "13"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Temperature": "13"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "22"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "19"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "22"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "23"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "22"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "19"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "18"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxTemperature": "14"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "19"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "13"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "13"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinTemperature": "12"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "平均露點溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "13"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "10"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "9"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "DewPoint": "0"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "平均相對濕度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "68"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "81"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "71"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "82"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "72"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "84"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "75"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "84"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "74"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "82"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "68"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "76"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "63"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "RelativeHumidity": "42"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最高體感溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "18"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "19"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "18"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "22"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "18"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "21"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "17"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "12"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "10"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxApparentTemperature": "12"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最低體感溫度",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "18"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "14"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "15"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "10"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "8"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "8"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinApparentTemperature": "9"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最大舒適度指數",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "20",
+                        "MaxComfortIndexDescription": "舒適"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "18",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "21",
+                        "MaxComfortIndexDescription": "舒適"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "19",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "21",
+                        "MaxComfortIndexDescription": "舒適"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "19",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "21",
+                        "MaxComfortIndexDescription": "舒適"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "18",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "20",
+                        "MaxComfortIndexDescription": "舒適"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "18",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "16",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "15",
+                        "MaxComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "16",
+                        "MaxComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MaxComfortIndex": "14",
+                        "MaxComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "最小舒適度指數",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "18",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "16",
+                        "MinComfortIndexDescription": "稍有寒意"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "15",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "15",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "14",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "14",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "13",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "13",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "MinComfortIndex": "13",
+                        "MinComfortIndexDescription": "寒冷"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "風速",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "5",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "5",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "5",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "4",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "6",
+                        "BeaufortScale": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "5",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "5",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "4",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "4",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "7",
+                        "BeaufortScale": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "9",
+                        "BeaufortScale": "5"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "8",
+                        "BeaufortScale": "5"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "7",
+                        "BeaufortScale": "4"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindSpeed": "4",
+                        "BeaufortScale": "3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "風向",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "西北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WindDirection": "偏北風"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "12小時降雨機率",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "30"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "ProbabilityOfPrecipitation": "-"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "天氣現象",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "多雲時陰短暫雨",
+                        "WeatherCode": "09"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "多雲時陰",
+                        "WeatherCode": "05"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "多雲時晴",
+                        "WeatherCode": "03"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "多雲",
+                        "WeatherCode": "04"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "多雲時晴",
+                        "WeatherCode": "03"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "Weather": "晴時多雲",
+                        "WeatherCode": "02"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "紫外線指數",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "5",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "4",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "5",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "5",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "5",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "4",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "UVIndex": "4",
+                        "UVExposureLevel": "中量級"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "ElementName": "天氣預報綜合描述",
+                "Time": [
+                  {
+                    "StartTime": "2025-01-22T12:00:00+08:00",
+                    "EndTime": "2025-01-22T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。降雨機率20%。溫度攝氏19至22度。稍有寒意至舒適。西北風 風速3級(每秒5公尺)。相對濕度68%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-22T18:00:00+08:00",
+                    "EndTime": "2025-01-23T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。降雨機率20%。溫度攝氏16至19度。稍有寒意。偏北風 風速3級(每秒5公尺)。相對濕度81%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T06:00:00+08:00",
+                    "EndTime": "2025-01-23T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "多雲時陰短暫雨。降雨機率30%。溫度攝氏16至22度。稍有寒意至舒適。偏北風 風速3級(每秒5公尺)。相對濕度71%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-23T18:00:00+08:00",
+                    "EndTime": "2025-01-24T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "多雲時陰。降雨機率20%。溫度攝氏16至20度。稍有寒意。偏北風 風速3級(每秒4公尺)。相對濕度82%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T06:00:00+08:00",
+                    "EndTime": "2025-01-24T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "多雲時晴。降雨機率20%。溫度攝氏16至23度。稍有寒意至舒適。偏北風 風速4級(每秒6公尺)。相對濕度72%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-24T18:00:00+08:00",
+                    "EndTime": "2025-01-25T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "多雲。降雨機率20%。溫度攝氏16至20度。稍有寒意。偏北風 風速3級(每秒5公尺)。相對濕度84%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T06:00:00+08:00",
+                    "EndTime": "2025-01-25T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏16至22度。稍有寒意至舒適。偏北風 風速3級(每秒5公尺)。相對濕度75%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-25T18:00:00+08:00",
+                    "EndTime": "2025-01-26T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏16至19度。寒冷至稍有寒意。偏北風 風速3級(每秒4公尺)。相對濕度84%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T06:00:00+08:00",
+                    "EndTime": "2025-01-26T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "多雲時晴。溫度攝氏15至21度。寒冷至舒適。偏北風 風速3級(每秒4公尺)。相對濕度74%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-26T18:00:00+08:00",
+                    "EndTime": "2025-01-27T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏15至18度。寒冷至稍有寒意。偏北風 風速4級(每秒7公尺)。相對濕度82%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T06:00:00+08:00",
+                    "EndTime": "2025-01-27T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏14至17度。寒冷至稍有寒意。偏北風 風速5級(每秒9公尺)。相對濕度68%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-27T18:00:00+08:00",
+                    "EndTime": "2025-01-28T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏13至15度。寒冷。偏北風 風速5級(每秒8公尺)。相對濕度76%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T06:00:00+08:00",
+                    "EndTime": "2025-01-28T18:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏13至16度。寒冷至稍有寒意。偏北風 風速4級(每秒7公尺)。相對濕度63%。"
+                      }
+                    ]
+                  },
+                  {
+                    "StartTime": "2025-01-28T18:00:00+08:00",
+                    "EndTime": "2025-01-29T06:00:00+08:00",
+                    "ElementValue": [
+                      {
+                        "WeatherDescription": "晴時多雲。溫度攝氏12至14度。寒冷。偏北風 風速3級(每秒4公尺)。相對濕度42%。"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'huninn';
+        src: url('./fonts/jf-openhuninn-2.1.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    header {
+        @apply flex items-center justify-between relative bg-zinc-800 text-slate-200 p-4;
+    }
+
+    body {
+        @apply box-border m-0 font-huninn;
+    }
+
+    .rounded-rb-xl {
+        border-bottom-right-radius: 2rem;
+    }
+}
+
+@layer components {
+    .col {
+        @apply flex flex-col;
+    }
+
+    .city-option {
+        @apply float-left absolute top-0 left-0 pb-8 rounded-rb-xl bg-zinc-800 text-slate-200 text-center transform transition-transform duration-300 ease-in-out;
+    }
+
+    .city-option.hidden {
+        @apply translate-x-full opacity-0;
+    }
+
+    .city-option.show {
+        @apply translate-x-0;
+    }
+
+    .options {
+        @apply px-16 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-300;
+    }
+
+    .location-icon {
+        @apply flex items-center shrink mr-auto text-xl;
+    }
+
+    .main-container {
+        @apply py-4 tablet:py-8 laptop:py-10 px-2.5 tablet:px-5 laptop:px-14 desktop:px-20 large-desktop:px-40 flex gap-10 flex-wrap bg-blue-950 text-slate-200
+    }
+
+    .main-weather {
+        @apply w-full flex flex-col p-3 tablet:p-6 laptop:p-10 desktop:p-16 bg-blue-900 rounded-large;
+    }
+
+    .container {
+        @apply flex gap-3 tablet:gap-16 laptop:gap-28 text-center justify-center;
+    }
+
+    .weather-card {
+        @apply flex flex-col gap-4 laptop:gap-5 desktop:gap-7 large-desktop:gap-10;
+    }
+
+    .content {
+        @apply w-full h-10 flex justify-center items-center text-center;
+    }
+
+    .status-bar {
+        @apply w-16.5 h-1.5 rounded bg-white;
+    }
+
+    .three-hours {
+        @apply flex flex-col gap-2.5 text-center;
+    }
+
+    .icon-large {
+        @apply w-16.5;
+    }
+
+    .icon-medium {
+        @apply w-13;
+    }
+
+    .icon-small {
+        @apply w-10;
+    }
+}
+
+@layer utilities {
+    @media (min-width: 1440px) {
+        .text-sm {
+            @apply text-base;
+        }
+
+        .text-lg {
+            @apply text-xl;
+        }
+    }
+}
