@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { fetchWeather } from "../utils/api";
+import { fetchCityList, fetchWeather } from "../utils/api";
 
 const CityOption = ({ isShow, setSelectedCity }) => {
     const [showCityOptions, setShowCityOptions] = useState(isShow);  // 控制城市選項顯示狀態
@@ -11,10 +11,7 @@ const CityOption = ({ isShow, setSelectedCity }) => {
         const fetchCities = async () => {
             try {
                 // 獲取所有縣市的資料
-                const data = await fetchWeather();
-
-                // 從 API 回傳的資料中提取所有 locationName
-                const locations = data.records.location.map((loc) => loc.locationName);
+                const locations = await fetchCityList();
                 setCities(locations);
             } catch (error) {
                 console.error("Failed to fetch cities:", error);
@@ -26,8 +23,8 @@ const CityOption = ({ isShow, setSelectedCity }) => {
 
     // 當使用者選擇城市後觸發
     const handleCitySelect = async (cityName) => {
-        setSelectedCity(cityName);  // 設定選擇的城市名稱
-        setShowCityOptions(false);   // 隱藏 city options
+        setSelectedCity(cityName);
+        setShowCityOptions(false);
         try {
             // 根據選擇的城市查詢天氣資料
             const data = await fetchWeather(cityName);
