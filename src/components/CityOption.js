@@ -14,7 +14,7 @@ const CityOption = ({ isShow, setSelectedCity }) => {
                 const locations = await fetchCityList();
                 setCities(locations);
             } catch (error) {
-                console.error("Failed to fetch cities:", error);
+                console.error("城市清單獲取失敗:", error);
             }
         };
 
@@ -30,7 +30,7 @@ const CityOption = ({ isShow, setSelectedCity }) => {
             const data = await fetchWeather(cityName);
             setWeatherData(data);  // 設定回傳的天氣資料
         } catch (error) {
-            console.error("Failed to fetch weather data:", error);
+            console.error("天氣資料獲取失敗:", error);
         }
     };
 
@@ -49,7 +49,7 @@ const CityOption = ({ isShow, setSelectedCity }) => {
                         </li>
                     ))
                 ) : (
-                    <li>Loading cities...</li> // 當縣市資料尚未載入時顯示提示
+                    <li><p>城市資料載入中......</p></li> // 當縣市資料尚未載入時顯示提示
                 )}
             </ul>
         </div>
