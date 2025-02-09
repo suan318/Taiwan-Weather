@@ -20,10 +20,6 @@ const App = () => {
 
   return (
     <>
-      {/* <div>
-        <Home />
-      </div> */}
-
       <Header
         onToggleCityOption={toggleCityOption}
         selectedCity={selectedCity}
@@ -32,7 +28,9 @@ const App = () => {
       <div className="main-container relative">
         <CityOption
           isShow={isCityOptionShow}
-          setSelectedCity={setSelectedCity} />
+          setSelectedCity={setSelectedCity}
+          setWeatherData={setWeatherData}
+        />
         <MainWeather weatherData={weatherData} />
         <TodayWeather weatherData={weatherData} />
         <ThreeHoursReport weatherData={weatherData} />

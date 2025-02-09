@@ -1,10 +1,9 @@
 import { React, useState, useEffect } from "react";
 import { fetchCityList, fetchWeather } from "../utils/api";
 
-const CityOption = ({ isShow, setSelectedCity }) => {
+const CityOption = ({ isShow, setSelectedCity, setWeatherData }) => {
     const [showCityOptions, setShowCityOptions] = useState(isShow);  // 控制城市選項顯示狀態
     const [cities, setCities] = useState([]);  // 儲存所有城市名稱
-    const [weatherData, setWeatherData] = useState(null);  // 儲存選擇城市的天氣資料
 
     // 從 API 中獲取所有城市資料
     useEffect(() => {
