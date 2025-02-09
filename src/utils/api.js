@@ -5,6 +5,7 @@ import cityMapping from "./cityMapping";
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 const BASE_URL = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore';
 
+//cityOption取得城市清單
 export const fetchCityList = async () => {
     try {
         const res = await fetch(`${BASE_URL}/F-C0032-001?Authorization=${API_KEY}`);
@@ -32,6 +33,59 @@ export const fetchCityList = async () => {
         return [];
     }
 };
+
+//找出請求時符合的時間段
+const getWeatherForNow = (weatherElements) => {
+    // 當前時間
+    const currentTime = new Date();
+    //當前的日期
+    const today = new Date().toISOString().split("T")[0];
+    //今日天氣 今晚的開始時間(18:00)、明早開始時間(06:00)
+    const tonightTime = new Date(`${today}T18:00:00`)
+
+    // 設定明早 06:00
+    const tomorrowTime = new Date(tonightTime);
+    tomorrowTime.setDate(tomorrowTime.getDate() + 1);
+    tomorrowTime.setHours(6, 0, 0, 0);
+
+    return weatherElements.map((element) => {
+        let nowData = null;
+        let tonightData = null;
+        let tomorrowData = null;
+        //上一個時間段
+        let lastSlot = null;
+
+        element.time.forEach((timeSlot) => {
+            const startTime = new Date(timeSlot.startTime);
+            const endTime = new Date(timeSlot.endTime);
+
+            // 確認當前時間的天氣
+            if (currentTime >= startTime && currentTime < endTime) {
+                nowData = timeSlot.parameter;
+            }
+
+            // 若當前時間在第一個時間段之前，取上一個時間段
+            if (!nowData && currentTime < startTime) {
+                nowData = lastSlot;
+            }
+
+            // 找到今晚 18:00 ~ 06:00 的天氣
+            if (startTime >= tonightTime && startTime < tomorrowTime) {
+                tonightData = timeSlot.parameter;
+            }
+
+            // 找到明早 06:00 ~ 18:00 的天氣
+            if (startTime >= tomorrowTime) {
+                tomorrowData = timeSlot.parameter;
+            }
+            // 記錄上一個時間段
+            lastSlot = timeSlot.parameter;
+        });
+
+        return { now: nowData, tonight: tonightData, tomorrow: tomorrowData };
+    });
+};
+
 
 export const fetchWeather = async (cityName) => {
     try {
@@ -69,14 +123,18 @@ export const fetchWeather = async (cityName) => {
         // 根據 StationName 找到相對應的測站資料
         const currentData = stations.find(station => station.StationName === stationName) || {};
 
+        // 過濾出 36 小時預報資料中當下時間符合的資料
+        const shortTermWeather = shortTermData.weatherElement ? getWeatherForNow(shortTermData.weatherElement) : [];
 
-        console.log("36小時天氣資料:", shortTermData);
+        //console.log("shortTermData.weatherElement:", shortTermData.weatherElement)
+        //console.log("36小時天氣資料:", shortTermData);
+        console.log("過濾出36小時天氣資料:", shortTermWeather);
         console.log("一週天氣資料:", weeklyData);
         console.log("即時天氣資料:", currentData);
 
 
 
-        return { shortTermData, weeklyData, currentData };
+        return { shortTermWeather, weeklyData, currentData };
     } catch (error) {
         console.error("Error fetching weather data:", error);
         return { shortTermData: null, weeklyData: null, currentData: null };
