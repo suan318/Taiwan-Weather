@@ -72,6 +72,10 @@
         @apply w-16.5 h-1.5 rounded bg-white;
     }
 
+    .status-bar-fill {
+        @apply h-full bg-yellow-400 rounded transition-all duration-300;
+    }
+
     .three-hours {
         @apply flex flex-col gap-2.5 text-center;
     }

@@ -92,15 +92,15 @@ export const fetchWeather = async (cityName) => {
         // 定義 API URLs
         const urls = {
             shortTerm: `${BASE_URL}/F-C0032-001?Authorization=${API_KEY}`,
-            weeklyForecast: `${BASE_URL}/F-D0047-091?Authorization=${API_KEY}`,
-            currentWeather: `${BASE_URL}/O-A0003-001?Authorization=${API_KEY}`
+            weekly: `${BASE_URL}/F-D0047-091?Authorization=${API_KEY}`,
+            current: `${BASE_URL}/O-A0003-001?Authorization=${API_KEY}`
         };
 
         // 使用 Promise.all 同時請求三個 API
         const [shortTermRes, weeklyRes, currentRes] = await Promise.all([
             fetch(urls.shortTerm).then(res => res.json()),
-            fetch(urls.weeklyForecast).then(res => res.json()),
-            fetch(urls.currentWeather).then(res => res.json())
+            fetch(urls.weekly).then(res => res.json()),
+            fetch(urls.current).then(res => res.json())
         ]);
 
         // 解析 36 小時預報
@@ -126,15 +126,26 @@ export const fetchWeather = async (cityName) => {
         // 過濾出 36 小時預報資料中當下時間符合的資料
         const shortTermWeather = shortTermData.weatherElement ? getWeatherForNow(shortTermData.weatherElement) : [];
 
+        //過濾出即時天氣需要的氣象資料
+        const currentWeather = currentData.WeatherElement ? {
+            StationName: currentData.StationName,
+            TownName: currentData.GeoInfo.TownName,
+            AirTemperature: Math.round(currentData.WeatherElement.AirTemperature) ?? null,
+            UVIndex: currentData.WeatherElement.UVIndex ?? null,
+            DailyHighTemperature: Math.round(currentData.WeatherElement.DailyExtreme.DailyHigh.TemperatureInfo.AirTemperature) ?? null,
+            DailyLowTemperature: Math.round(currentData.WeatherElement.DailyExtreme.DailyLow.TemperatureInfo.AirTemperature) ?? null
+        } : null;
+
         //console.log("shortTermData.weatherElement:", shortTermData.weatherElement)
         //console.log("36小時天氣資料:", shortTermData);
         console.log("過濾出36小時天氣資料:", shortTermWeather);
+        console.log("過濾出即時天氣資料:", currentWeather);
         console.log("一週天氣資料:", weeklyData);
         console.log("即時天氣資料:", currentData);
 
 
 
-        return { shortTermWeather, weeklyData, currentData };
+        return { shortTermWeather, weeklyData, currentWeather };
     } catch (error) {
         console.error("Error fetching weather data:", error);
         return { shortTermData: null, weeklyData: null, currentData: null };

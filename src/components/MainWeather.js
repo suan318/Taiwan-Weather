@@ -1,10 +1,26 @@
 import iconSunny from '../images/icon-sunny.png';
 import MainBlock from './MainBlock';
 
-const MainWeather = () => {
+const MainWeather = ({ weatherData }) => {
+    if (!weatherData) {
+        return <p>載入天氣資料中......</p>;
+    }
+
+    // 解析短期天氣資料
+    const { currentWeather } = weatherData;
+
+    //溫度
+    const currentT = currentWeather.AirTemperature;
+    const maxT = currentWeather.DailyHighTemperature;
+    const minT = currentWeather.DailyLowTemperature;
+
+
+
+
+
     const weatherCards = [
         { id: 1, title: "目前天氣", image: iconSunny, alt: "天氣", showStatusBar: false },
-        { id: 2, title: "溫度", value: "30", showStatusBar: true },
+        { id: 2, title: "溫度", value: currentT, min: minT, max: maxT, showStatusBar: true },
     ];
 
     const airCards = [
