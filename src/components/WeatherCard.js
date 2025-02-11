@@ -2,7 +2,7 @@ const WeatherCard = ({ title, cards, iconClass = 'icon-medium', renderCard }) =>
     return (
         <>
             {title && <h1 className="text-lg">{title}</h1>}
-            <div className="flex gap-5 justify-around">
+            <div className="flex tablet:gap-5 justify-around">
                 {cards && cards.length > 0 && cards.map((card, id) => (
                     <div key={id} className="three-hours">
                         <div className={iconClass}>

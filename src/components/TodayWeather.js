@@ -8,28 +8,28 @@ const TodayWeather = ({ weatherData }) => {
     };
 
     // 解析短期天氣資料
-    const { shortTermWeather } = weatherData;
+    const { shortTermWeather, currentWeather } = weatherData;
 
     // 今日天氣
-    const todayWeatherDescription = shortTermWeather[0]?.now.parameterName || "未知天氣";
-    const todayPop = shortTermWeather[1]?.now.parameterName || "N/A";
-    const todayMinT = shortTermWeather[2]?.now.parameterName || "N/A";
-    const todayMaxT = shortTermWeather[4]?.now.parameterName || "N/A";
+    const todayWeatherDescription = shortTermWeather[0].now.parameterName || "未知天氣";
+    const todayPop = shortTermWeather[1].now.parameterName || "N/A";
+    const todayMinT = currentWeather.DailyLowTemperature || "N/A";
+    const todayMaxT = currentWeather.DailyHighTemperature || "N/A";
 
     //天氣圖示
-    const weatherIcon = shortTermWeather[0]?.parameterValue || "未知天氣";
+    const weatherIcon = shortTermWeather[0].parameterValue || "未知天氣";
 
     //今晚
-    const tonightWeatherDescription = shortTermWeather[0]?.tonight.parameterName || "未知天氣";
-    const tonightPop = shortTermWeather[1]?.tonight.parameterName || "N/A";
-    const tonightMinT = shortTermWeather[2]?.tonight.parameterName || "N/A";
-    const tonightMaxT = shortTermWeather[4]?.tonight.parameterName || "N/A";
+    const tonightWeatherDescription = shortTermWeather[0].tonight.parameterName || "未知天氣";
+    const tonightPop = shortTermWeather[1].tonight.parameterName || "N/A";
+    const tonightMinT = shortTermWeather[2].tonight.parameterName || "N/A";
+    const tonightMaxT = shortTermWeather[4].tonight.parameterName || "N/A";
 
     //明早
-    const tomorrowWeatherDescription = shortTermWeather[0]?.tomorrow.parameterName || "未知天氣";
-    const tomorrowPop = shortTermWeather[1]?.tomorrow.parameterName || "N/A";
-    const tomorrowMinT = shortTermWeather[2]?.tomorrow.parameterName || "N/A";
-    const tomorrowMaxT = shortTermWeather[4]?.tomorrow.parameterName || "N/A";
+    const tomorrowWeatherDescription = shortTermWeather[0].tomorrow.parameterName || "未知天氣";
+    const tomorrowPop = shortTermWeather[1].tomorrow.parameterName || "N/A";
+    const tomorrowMinT = shortTermWeather[2].tomorrow.parameterName || "N/A";
+    const tomorrowMaxT = shortTermWeather[4].tomorrow.parameterName || "N/A";
 
 
     return (
