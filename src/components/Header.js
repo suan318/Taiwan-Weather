@@ -6,7 +6,7 @@ const Header = ({ onToggleCityOption, selectedCity }) => {
             <div className="location-icon cursor-pointer" onClick={onToggleCityOption}>
                 <FaLocationDot />
             </div>
-            <h1 className="text-xl text-center grow">{selectedCity || "臺北市"}</h1>
+            <h1 className="text-xl text-center grow">{selectedCity}</h1>
         </header>
     );
 }
