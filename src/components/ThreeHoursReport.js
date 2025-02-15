@@ -33,7 +33,7 @@ const ThreeHoursReport = ({ weatherData }) => {
     const ThreeHourCards = weatherDesc.slice(0, 5).map((item, index) => ({
         id: index + 1,
         icon: iconSunny,
-        alt: "三小時預報",
+        alt: item.weather.parameterName,
         time: item.time || "N/A",
         pop: `${rainfall[index]?.weather?.parameterName || "N/A"}%`
     }));

@@ -41,6 +41,7 @@ const TodayWeather = ({ weatherData }) => {
                     iconSunny={iconSunny}
                     tempRange={`${todayMinT}°C ~ ${todayMaxT}°C`}
                     description={`降雨機率 ${todayPop} %  ${todayWeatherDescription}`}
+                    alt={todayWeatherDescription}
                 />
                 {/* 今日天氣 */}
 
@@ -51,12 +52,14 @@ const TodayWeather = ({ weatherData }) => {
                         iconSunny={iconSunny}
                         tempRange={`${tonightMinT}°C ~ ${tonightMaxT}°C`}
                         description={`降雨機率 ${tonightPop} %  ${tonightWeatherDescription}`}
+                        alt={tonightWeatherDescription}
                     />
                     <TodayBlock2
                         title="明早"
                         iconSunny={iconSunny}
                         tempRange={`${tomorrowMinT}°C ~ ${tomorrowMaxT}°C`}
                         description={`降雨機率 ${tomorrowPop} %  ${tomorrowWeatherDescription}`}
+                        alt={tomorrowWeatherDescription}
                     />
                 </div>
                 {/* 今晚及明早 */}

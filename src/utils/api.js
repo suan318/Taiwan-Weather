@@ -67,6 +67,7 @@ export const fetchWeather = async (cityName) => {
         const currentWeather = currentData.WeatherElement ? {
             StationName: currentData.StationName,
             TownName: currentData.GeoInfo.TownName,
+            weather: currentData.WeatherElement.Weather,
             AirTemperature: Math.round(currentData.WeatherElement.AirTemperature) ?? null,
             UVIndex: currentData.WeatherElement.UVIndex ?? null,
             DailyHighTemperature: Math.round(currentData.WeatherElement.DailyExtreme.DailyHigh.TemperatureInfo.AirTemperature) ?? null,
@@ -76,7 +77,7 @@ export const fetchWeather = async (cityName) => {
         console.log("即時天氣資料:", currentData);
         console.log("過濾出即時天氣資料:", currentWeather);
 
-        return { shortTermWeather, weeklyData, currentWeather, threeHoursForecast };
+        return { shortTermWeather, weeklyData, currentWeather, threeHoursForecast, weeklyForecast };
     } catch (error) {
         console.error("Error fetching weather data:", error);
         return { shortTermData: null, weeklyData: null, currentData: null };

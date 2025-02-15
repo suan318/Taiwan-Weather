@@ -7,19 +7,20 @@ const MainWeather = ({ weatherData }) => {
     }
 
     // 解析短期天氣資料
-    const { currentWeather } = weatherData;
+    const { currentWeather, shortTermWeather } = weatherData;
 
     //溫度
     const currentT = currentWeather.AirTemperature;
     const maxT = currentWeather.DailyHighTemperature;
     const minT = currentWeather.DailyLowTemperature;
+    const alt = shortTermWeather[0].now.parameterName || "未知天氣";
 
 
 
 
 
     const weatherCards = [
-        { id: 1, title: "目前天氣", image: iconSunny, alt: "天氣", showStatusBar: false },
+        { id: 1, title: "目前天氣", image: iconSunny, alt: alt, showStatusBar: false },
         { id: 2, title: "溫度", value: currentT, min: minT, max: maxT, showStatusBar: true },
     ];
 
