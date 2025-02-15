@@ -48,6 +48,10 @@ export const fetchWeather = async (cityName) => {
 
         console.log("一週天氣資料:", weeklyData);
 
+        const weeklyForecast = weeklyData ? weeklyReport(weeklyData) : [];
+
+        console.log("weeklyForecast:", weeklyForecast);
+
         // 解析 即時天氣資料
         // 查找 cityMapping 中對應的 StationName
         const mappedCity = cityMapping.find(city => city.cityName === cityName);
@@ -94,6 +98,27 @@ export const threeHoursReport = (weatherElements) => {
         timeSlots.push(newTime);
     }
 
+    // 檢查第一個時段是否有匹配到資料
+    const firstSlot = timeSlots[0];
+    const isFirstMatch = weatherElements.some(element =>
+        element.time.some(timeData => {
+            const startTime = new Date(timeData.startTime);
+            const endTime = new Date(timeData.endTime);
+            return firstSlot >= startTime && firstSlot < endTime;
+        })
+    );
+
+    // 如果第一個時段沒有匹配到，則把 now 加 1 小時，重新計算 timeSlots
+    if (!isFirstMatch) {
+        now.setHours(now.getHours() + 1);
+        timeSlots.length = 0;
+        for (let i = 0; i < 5; i++) {
+            const newTime = new Date(now);
+            newTime.setHours(now.getHours() + i * 3);
+            timeSlots.push(newTime);
+        }
+    }
+
     return weatherElements.map((element) => {
         // 記錄上一個時段的天氣數據
         let lastSlot = null;
@@ -128,4 +153,50 @@ export const threeHoursReport = (weatherElements) => {
 
         return threeHoursForecast;
     });
+};
+
+//一週預報
+export const weeklyReport = (weeklyData) => {
+    if (!weeklyData || !weeklyData.WeatherElement) {
+        return [];
+    }
+
+    const maxTempData = weeklyData.WeatherElement.find(el => el.ElementName === "最高溫度");
+    const minTempData = weeklyData.WeatherElement.find(el => el.ElementName === "最低溫度");
+    const weatherDescData = weeklyData.WeatherElement.find(el => el.ElementName === "天氣現象");
+
+    if (!maxTempData || !minTempData || !weatherDescData) {
+        return [];
+    }
+
+    // 先建立完整的資料陣列
+    const allForecasts = maxTempData.Time.map((item, index) => ({
+        date: item.StartTime.split("T")[0],
+        maxTemp: maxTempData.Time[index]?.ElementValue[0]?.MaxTemperature || "N/A",
+        minTemp: minTempData.Time[index]?.ElementValue[0]?.MinTemperature || "N/A",
+        weather: weatherDescData.Time[index]?.ElementValue[0]?.Weather || "N/A",
+        weatherCode: weatherDescData.Time[index]?.ElementValue[0]?.WeatherCode || "N/A"
+    }));
+
+    // 按日期分組並合併同一天的資料
+    const groupedForecasts = allForecasts.reduce((acc, forecast) => {
+        if (!acc[forecast.date]) {
+            // 第一次遇到這個日期
+            acc[forecast.date] = forecast;
+        } else {
+            // 已經有這個日期的資料，比較並更新
+            const existing = acc[forecast.date];
+            acc[forecast.date] = {
+                date: forecast.date,
+                maxTemp: Math.max(Number(existing.maxTemp), Number(forecast.maxTemp)).toString(),
+                minTemp: Math.min(Number(existing.minTemp), Number(forecast.minTemp)).toString(),
+                weather: existing.weather,  // 保留當天第一筆的天氣描述
+                weatherCode: existing.weatherCode  // 保留當天第一筆的天氣代碼
+            };
+        }
+        return acc;
+    }, {});
+
+    // 轉換回陣列格式
+    return Object.values(groupedForecasts);
 };
