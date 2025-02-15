@@ -48,7 +48,7 @@ const App = () => {
         />
         <MainWeather weatherData={weatherData} />
         <TodayWeather weatherData={weatherData} />
-        {/* <ThreeHoursReport weatherData={weatherData} /> */}
+        <ThreeHoursReport weatherData={weatherData} />
         <WeekReport weatherData={weatherData} />
       </div>
     </>
