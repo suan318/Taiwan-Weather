@@ -48,12 +48,3 @@ const ThreeHoursReport = ({ weatherData }) => {
 }
 
 export default ThreeHoursReport;
-
-
-// const ThreeHourCards = [
-//     { id: 1, icon: iconSunny, alt: ThreeHourTitle, pop: `${hoursPOP}%`, time: time },
-//     { id: 2, icon: iconSunny, alt: ThreeHourTitle, pop: `${hoursPOP}%`, time: time },
-//     { id: 3, icon: iconSunny, alt: ThreeHourTitle, pop: `${hoursPOP}%`, time: time },
-//     { id: 4, icon: iconSunny, alt: ThreeHourTitle, pop: `${hoursPOP}%`, time: time },
-//     { id: 5, icon: iconSunny, alt: ThreeHourTitle, pop: `${hoursPOP}%`, time: time }
-// ]
