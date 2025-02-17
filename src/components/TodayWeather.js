@@ -1,6 +1,6 @@
-import iconSunny from '../images/icon-sunny.png';
 import TodayBlock1 from './TodayBlock1';
 import TodayBlock2 from './TodayBlock2';
+import WeatherIcon from './WeatherIcon';
 
 const TodayWeather = ({ weatherData }) => {
     if (!weatherData) {
@@ -10,27 +10,35 @@ const TodayWeather = ({ weatherData }) => {
     // 解析短期天氣資料
     const { shortTermWeather, currentWeather } = weatherData;
 
-    // 今日天氣
-    const todayWeatherDescription = shortTermWeather[0].now.parameterName || "未知天氣";
-    const todayPop = shortTermWeather[1].now.parameterName || "N/A";
+    //天氣敘述
+    const getWeatherDescription = (time) => shortTermWeather[0][time].parameterName || "未知天氣";
+    const todayWeatherDescription = getWeatherDescription("now");
+    const tonightWeatherDescription = getWeatherDescription("tonight");
+    const tomorrowWeatherDescription = getWeatherDescription("tomorrow");
+
+    //天氣代碼
+    const getWeatherCode = (time) => shortTermWeather[0][time].parameterValue || "未知天氣";
+    const nowWeatherCode = getWeatherCode("now");
+    const tonightWeatherCode = getWeatherCode("tonight")
+    const tomorrowWeatherCode = getWeatherCode("tomorrow")
+
+    //降雨機率
+    const getPop = (time) => shortTermWeather[1][time].parameterName || "N/A";
+    const todayPop = getPop("now");
+    const tonightPop = getPop("tonight");
+    const tomorrowPop = getPop("tomorrow");
+
+    //今日氣溫
     const todayMinT = currentWeather.DailyLowTemperature || "N/A";
     const todayMaxT = currentWeather.DailyHighTemperature || "N/A";
 
-    //天氣圖示
-    const weatherIcon = shortTermWeather[0].parameterValue || "未知天氣";
-
-    //今晚
-    const tonightWeatherDescription = shortTermWeather[0].tonight.parameterName || "未知天氣";
-    const tonightPop = shortTermWeather[1].tonight.parameterName || "N/A";
-    const tonightMinT = shortTermWeather[2].tonight.parameterName || "N/A";
-    const tonightMaxT = shortTermWeather[4].tonight.parameterName || "N/A";
-
-    //明早
-    const tomorrowWeatherDescription = shortTermWeather[0].tomorrow.parameterName || "未知天氣";
-    const tomorrowPop = shortTermWeather[1].tomorrow.parameterName || "N/A";
-    const tomorrowMinT = shortTermWeather[2].tomorrow.parameterName || "N/A";
-    const tomorrowMaxT = shortTermWeather[4].tomorrow.parameterName || "N/A";
-
+    //今晚明早最高溫與最低溫
+    const getMinT = (time) => shortTermWeather[2][time].parameterName || "N/A";
+    const getMaxT = (time) => shortTermWeather[4][time].parameterName || "N/A";
+    const tonightMinT = getMinT("tonight");
+    const tonightMaxT = getMaxT("tonight");
+    const tomorrowMinT = getMinT("tomorrow");
+    const tomorrowMaxT = getMaxT("tomorrow");
 
     return (
         <section className="main-weather gap-5 large-desktop:gap-10 flex-wrap">
@@ -38,7 +46,7 @@ const TodayWeather = ({ weatherData }) => {
             <div className="flex flex-wrap gap-13">
                 {/* 今日天氣 */}
                 <TodayBlock1
-                    iconSunny={iconSunny}
+                    icon={WeatherIcon(Number(nowWeatherCode))}
                     tempRange={`${todayMinT}°C ~ ${todayMaxT}°C`}
                     description={`降雨機率 ${todayPop} %  ${todayWeatherDescription}`}
                     alt={todayWeatherDescription}
@@ -49,14 +57,14 @@ const TodayWeather = ({ weatherData }) => {
                 <div className="w-full flex justify-center gap-12 tablet:gap-14 laptop:gap-60 large-desktop:gap-36">
                     <TodayBlock2
                         title="今晚"
-                        iconSunny={iconSunny}
+                        icon={WeatherIcon(Number(tonightWeatherCode))}
                         tempRange={`${tonightMinT}°C ~ ${tonightMaxT}°C`}
                         description={`降雨機率 ${tonightPop} %  ${tonightWeatherDescription}`}
                         alt={tonightWeatherDescription}
                     />
                     <TodayBlock2
                         title="明早"
-                        iconSunny={iconSunny}
+                        icon={WeatherIcon(Number(tomorrowWeatherCode))}
                         tempRange={`${tomorrowMinT}°C ~ ${tomorrowMaxT}°C`}
                         description={`降雨機率 ${tomorrowPop} %  ${tomorrowWeatherDescription}`}
                         alt={tomorrowWeatherDescription}
