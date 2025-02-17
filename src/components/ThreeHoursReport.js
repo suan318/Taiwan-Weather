@@ -1,6 +1,6 @@
 import React from 'react';
-import iconSunny from '../images/icon-sunny.png';
 import WeatherCard from './WeatherCard';
+import WeatherIcon from './WeatherIcon';
 
 const ThreeHoursReport = ({ weatherData }) => {
 
@@ -32,7 +32,7 @@ const ThreeHoursReport = ({ weatherData }) => {
     // 生成 5 個時段的天氣卡片
     const ThreeHourCards = weatherDesc.slice(0, 5).map((item, index) => ({
         id: index + 1,
-        icon: iconSunny,
+        icon: WeatherIcon(Number(weatherCode[index])),
         alt: item.weather.parameterName,
         time: item.time || "N/A",
         pop: `${rainfall[index]?.weather?.parameterName || "N/A"}%`
