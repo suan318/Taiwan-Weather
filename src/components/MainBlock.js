@@ -1,5 +1,3 @@
-import iconSunny from '../images/icon-sunny.png';
-
 const MainBlock = ({ title, cards }) => {
     return (
         <div className="main-weather gap-4 large-desktop:gap-8">
@@ -22,7 +20,7 @@ const MainBlock = ({ title, cards }) => {
                             </div>
                             <div className="content">
                                 {card.image ? (
-                                    <img className="icon-large" src={iconSunny} alt={card.alt} />
+                                    <img className="icon-large" src={card.image} alt={card.alt} />
                                 ) : (
                                     <p className="text-xxl">{card.value}</p>
                                 )}

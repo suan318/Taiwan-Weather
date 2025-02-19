@@ -1,5 +1,5 @@
-import iconSunny from '../images/icon-sunny.png';
 import MainBlock from './MainBlock';
+import WeatherIcon from './WeatherIcon';
 
 const MainWeather = ({ weatherData }) => {
     if (!weatherData) {
@@ -14,13 +14,14 @@ const MainWeather = ({ weatherData }) => {
     const maxT = currentWeather.DailyHighTemperature;
     const minT = currentWeather.DailyLowTemperature;
     const alt = shortTermWeather[0].now.parameterName || "未知天氣";
+    const weatherCode = shortTermWeather[0].now.parameterValue;
 
 
 
 
 
     const weatherCards = [
-        { id: 1, title: "目前天氣", image: iconSunny, alt: alt, showStatusBar: false },
+        { id: 1, title: "目前天氣", image: WeatherIcon(Number(weatherCode)), alt: alt, showStatusBar: false },
         { id: 2, title: "溫度", value: currentT, min: minT, max: maxT, showStatusBar: true },
     ];
 
