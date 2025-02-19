@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { fetchCityList, fetchWeather } from "../utils/api";
+import { fetchCityList, fetchWeather } from "../utils/cwbApi";
 
 const CityOption = ({ isShow, setSelectedCity, setWeatherData }) => {
     const [showCityOptions, setShowCityOptions] = useState(isShow);  // 控制城市選項顯示狀態

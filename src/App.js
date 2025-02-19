@@ -5,7 +5,7 @@ import MainWeather from "./components/MainWeather";
 import TodayWeather from "./components/TodayWeather";
 import ThreeHoursReport from "./components/ThreeHoursReport";
 import WeekReport from "./components/WeekReport";
-import { fetchWeather } from "./utils/api";
+import { fetchWeather } from "./utils/cwbApi";
 import './styles.css';
 
 
