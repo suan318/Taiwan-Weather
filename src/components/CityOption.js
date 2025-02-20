@@ -1,7 +1,8 @@
 import { React, useState, useEffect } from "react";
 import { fetchCityList, fetchWeather } from "../utils/cwbApi";
+import { fetchEnvData } from "../utils/epaApi";
 
-const CityOption = ({ isShow, setSelectedCity, setWeatherData }) => {
+const CityOption = ({ isShow, setSelectedCity, setWeatherData, setEnvData }) => {
     const [showCityOptions, setShowCityOptions] = useState(isShow);  // 控制城市選項顯示狀態
     const [cities, setCities] = useState([]);  // 儲存所有城市名稱
 
@@ -28,6 +29,11 @@ const CityOption = ({ isShow, setSelectedCity, setWeatherData }) => {
             // 根據選擇的城市查詢天氣資料
             const data = await fetchWeather(cityName);
             setWeatherData(data);  // 設定回傳的天氣資料
+
+            // 獲取環境部資料
+            const envData = await fetchEnvData(cityName);
+            setEnvData(envData);  // 更新環境部資料
+
         } catch (error) {
             console.error("天氣資料獲取失敗:", error);
         }

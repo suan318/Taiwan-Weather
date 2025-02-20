@@ -1,3 +1,5 @@
+import { StatusBar } from "./StatusBar";
+
 const MainBlock = ({ title, cards }) => {
     return (
         <div className="main-weather gap-4 large-desktop:gap-8">
@@ -6,12 +8,6 @@ const MainBlock = ({ title, cards }) => {
             </div>
             <div className="container">
                 {cards.map((card, id) => {
-                    // 計算當前溫度在最高與最低溫的百分比
-                    let fillWidth = 0;
-                    if (card.showStatusBar && card.min !== undefined && card.max !== undefined) {
-                        fillWidth = ((card.value - card.min) / (card.max - card.min)) * 100;
-                        fillWidth = Math.max(0, Math.min(fillWidth, 100));
-                    }
 
                     return (
                         <div key={id} className="weather-card">
@@ -26,12 +22,12 @@ const MainBlock = ({ title, cards }) => {
                                 )}
                             </div>
                             {card.showStatusBar && (
-                                <div className="status-bar">
-                                    <div
-                                        className="status-bar-fill"
-                                        style={{ width: `${fillWidth}%`, }}
-                                    ></div>
-                                </div>
+                                <StatusBar
+                                    value={card.value}
+                                    min={card.min}
+                                    max={card.max}
+                                    type={card.type} // 傳遞計算類型
+                                />
                             )}
                         </div>
                     );
