@@ -23,7 +23,7 @@ const MainWeather = ({ weatherData, envData }) => {
 
 
     const weatherCards = [
-        { id: 1, title: "目前天氣", image: WeatherIcon(Number(weatherCode)), alt: alt, showStatusBar: false },
+        { id: 1, title: "目前天氣", image: WeatherIcon(Number(weatherCode), 'auto'), alt: alt, showStatusBar: false },
         { id: 2, title: "溫度", value: currentT, min: minT, max: maxT, showStatusBar: true, type: 'temperature' },
     ];
 

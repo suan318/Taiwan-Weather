@@ -35,7 +35,7 @@ const WeekReport = ({ weatherData }) => {
     //在每個資料中插入星期幾
     const weekCards = weeklyForecast.map(forecast => ({
         id: forecast.date,
-        icon: WeatherIcon(Number(forecast.weatherCode)),
+        icon: WeatherIcon(Number(forecast.weatherCode), 'day'),
         alt: forecast.weather,
         displayDate: convertDateToText(forecast.date),
         maxTemp: forecast.maxTemp,

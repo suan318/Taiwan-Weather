@@ -61,17 +61,20 @@ const isDaytime = () => {
     return hour >= 5 && hour < 18;
 };
 
-//回傳圖片 URL
-const WeatherIcon = (weatherCode) => {
-    const period = isDaytime() ? "day" : "night";
+//回傳圖片 URL  period為auto:以當前時間區分日夜,day:白天,night:夜晚
+const WeatherIcon = (weatherCode, period = 'auto') => {
+
+    // 決定使用白天或晚上的圖示
+    const timeOfDay = period === 'auto'
+        ? (isDaytime() ? 'day' : 'night') : period;
 
     for (const [type, codes] of Object.entries(weatherTypes)) {
         if (codes.includes(weatherCode)) {
-            return weatherIcons[period][type] || DayClear;
+            return weatherIcons[timeOfDay][type] || weatherIcons.day.isClear;
         }
     }
 
-    return DayClear; // 預設回傳晴天圖示
+    return weatherIcons.day.isClear; // 預設回傳晴天圖示
 };
 
 export default WeatherIcon;

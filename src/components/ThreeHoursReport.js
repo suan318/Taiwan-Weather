@@ -32,7 +32,7 @@ const ThreeHoursReport = ({ weatherData }) => {
     // 生成 5 個時段的天氣卡片
     const ThreeHourCards = weatherDesc.slice(0, 5).map((item, index) => ({
         id: index + 1,
-        icon: WeatherIcon(Number(weatherCode[index])),
+        icon: WeatherIcon(Number(weatherCode[index]), 'auto'),
         alt: item.weather.parameterName,
         time: item.time || "N/A",
         pop: `${rainfall[index]?.weather?.parameterName || "N/A"}%`

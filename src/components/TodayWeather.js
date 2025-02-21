@@ -46,7 +46,7 @@ const TodayWeather = ({ weatherData }) => {
             <div className="flex flex-wrap gap-13">
                 {/* 今日天氣 */}
                 <TodayBlock1
-                    icon={WeatherIcon(Number(nowWeatherCode))}
+                    icon={WeatherIcon(Number(nowWeatherCode), 'auto')}
                     tempRange={`${todayMinT}°C ~ ${todayMaxT}°C`}
                     description={`降雨機率 ${todayPop} %  ${todayWeatherDescription}`}
                     alt={todayWeatherDescription}
@@ -57,14 +57,14 @@ const TodayWeather = ({ weatherData }) => {
                 <div className="w-full flex justify-center gap-12 tablet:gap-14 laptop:gap-60 large-desktop:gap-36">
                     <TodayBlock2
                         title="今晚"
-                        icon={WeatherIcon(Number(tonightWeatherCode))}
+                        icon={WeatherIcon(Number(tonightWeatherCode), 'night')}
                         tempRange={`${tonightMinT}°C ~ ${tonightMaxT}°C`}
                         description={`降雨機率 ${tonightPop} %  ${tonightWeatherDescription}`}
                         alt={tonightWeatherDescription}
                     />
                     <TodayBlock2
                         title="明早"
-                        icon={WeatherIcon(Number(tomorrowWeatherCode))}
+                        icon={WeatherIcon(Number(tomorrowWeatherCode), 'day')}
                         tempRange={`${tomorrowMinT}°C ~ ${tomorrowMaxT}°C`}
                         description={`降雨機率 ${tomorrowPop} %  ${tomorrowWeatherDescription}`}
                         alt={tomorrowWeatherDescription}
