@@ -1,5 +1,6 @@
 import WeatherCard from './WeatherCard';
 import WeatherIcon from './WeatherIcon';
+import TemperatureChart from './TemperatureChart';
 
 const WeekReport = ({ weatherData }) => {
 
@@ -50,6 +51,7 @@ const WeekReport = ({ weatherData }) => {
                 iconClass="icon-small"
                 renderCard={(card) => <p className="text-sm">{card.displayDate}</p>}
             />
+            <TemperatureChart data={weeklyForecast} />
         </section>
     );
 }
