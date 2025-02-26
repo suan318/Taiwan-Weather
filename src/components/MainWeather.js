@@ -1,10 +1,15 @@
 import MainBlock from './MainBlock';
 import WeatherIcon from './WeatherIcon';
+import Loader from './Loader';
 
 const MainWeather = ({ weatherData, envData }) => {
 
     if (!weatherData || !envData) {
-        return <p>載入天氣資料中......</p>;
+        return (
+            <div className="loader-container">
+                <Loader />
+            </div>
+        )
     }
 
     // 解析短期天氣資料

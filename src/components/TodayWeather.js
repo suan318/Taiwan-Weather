@@ -1,10 +1,15 @@
 import TodayBlock1 from './TodayBlock1';
 import TodayBlock2 from './TodayBlock2';
 import WeatherIcon from './WeatherIcon';
+import Loader from './Loader';
 
 const TodayWeather = ({ weatherData }) => {
     if (!weatherData) {
-        return <p>載入天氣資料中......</p>;
+        return (
+            <div className="loader-container">
+                <Loader />
+            </div>
+        )
     };
 
     // 解析短期天氣資料

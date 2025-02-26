@@ -1,11 +1,15 @@
 import WeatherCard from './WeatherCard';
 import WeatherIcon from './WeatherIcon';
 import TemperatureChart from './TemperatureChart';
-
+import Loader from './Loader';
 const WeekReport = ({ weatherData }) => {
 
     if (!weatherData || !weatherData.weeklyForecast) {
-        return <p>載入天氣資料中......</p>;
+        return (
+            <div className="loader-container">
+                <Loader />
+            </div>
+        )
     }
 
     const { weeklyForecast } = weatherData

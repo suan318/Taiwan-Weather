@@ -1,11 +1,16 @@
 import React from 'react';
 import WeatherCard from './WeatherCard';
 import WeatherIcon from './WeatherIcon';
+import Loader from './Loader';
 
 const ThreeHoursReport = ({ weatherData }) => {
 
     if (!weatherData || !weatherData.threeHoursForecast) {
-        return <p>載入天氣資料中......</p>;
+        return (
+            <div className="loader-container">
+                <Loader />
+            </div>
+        )
     }
 
     const { threeHoursForecast } = weatherData;
