@@ -29,7 +29,24 @@
     }
 
     .city-option {
-        @apply float-left absolute top-0 left-0 pb-8 rounded-rb-xl bg-zinc-800 text-slate-200 text-center transform transition-transform duration-300 ease-in-out;
+        @apply float-left absolute top-0 left-0 rounded-rb-xl bg-zinc-800 text-slate-200 text-center transform transition-transform duration-300 ease-in-out max-h-[300px] overflow-y-auto;
+
+        /* 使用遮罩創建圓角效果 */
+        -webkit-mask-image: radial-gradient(circle at bottom right, transparent 10px, black 11px);
+        mask-image: radial-gradient(circle at bottom right, transparent 10px, black 11px);
+    }
+
+    /* city-option滾動條 */
+    .city-option::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .city-option::-webkit-scrollbar-thumb {
+        @apply bg-white/50 rounded-rb-xl;
+    }
+
+    .city-option::-webkit-scrollbar-track {
+        @apply bg-white/10;
     }
 
     .city-option.hidden {
