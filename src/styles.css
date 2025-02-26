@@ -58,7 +58,7 @@
     }
 
     .options {
-        @apply px-16 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-300;
+        @apply px-16 hover:bg-sky-600 active:bg-sky-700 focus:outline-none focus:ring focus:ring-sky-300 transition-all duration-200 ease-in-out;
     }
 
     .location-icon {
