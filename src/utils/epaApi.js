@@ -38,6 +38,8 @@ export const fetchEnvData = async (cityName) => {
             return null;
         }
 
+        console.log(selectedSiteData);
+
         return selectedSiteData || null;
 
     } catch (error) {

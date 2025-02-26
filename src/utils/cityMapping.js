@@ -18,7 +18,7 @@ const cityMapping = [
         locationName: '屏東縣',
         LocationName: '屏東縣',
         StationName: '恆春',
-        sitename: '恆春'
+        sitename: '屏東'
     },
     {
         cityName: '苗栗縣',
@@ -46,7 +46,7 @@ const cityMapping = [
         locationName: '臺北市',
         LocationName: '臺北市',
         StationName: '臺北',
-        sitename: '中山'
+        sitename: '士林'
     },
     {
         cityName: '金門縣',
@@ -102,7 +102,7 @@ const cityMapping = [
         locationName: '南投縣',
         LocationName: '南投縣',
         StationName: '國三N223K',//草屯
-        sitename: '南投'
+        sitename: '埔里'
     },
     {
         cityName: '臺中市',
