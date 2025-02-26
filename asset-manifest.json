@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Taiwan-Weather/static/css/main.cfe9d484.css",
+    "main.js": "/Taiwan-Weather/static/js/main.a2347006.js",
+    "static/js/488.9af38630.chunk.js": "/Taiwan-Weather/static/js/488.9af38630.chunk.js",
+    "static/media/jf-openhuninn-2.1.ttf": "/Taiwan-Weather/static/media/jf-openhuninn-2.1.6f14281ed7844dfc0e76.ttf",
+    "index.html": "/Taiwan-Weather/index.html",
+    "main.cfe9d484.css.map": "/Taiwan-Weather/static/css/main.cfe9d484.css.map",
+    "main.a2347006.js.map": "/Taiwan-Weather/static/js/main.a2347006.js.map",
+    "488.9af38630.chunk.js.map": "/Taiwan-Weather/static/js/488.9af38630.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfe9d484.css",
+    "static/js/main.a2347006.js"
+  ]
+}
